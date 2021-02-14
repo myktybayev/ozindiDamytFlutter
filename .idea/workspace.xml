@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27533d78-ee8d-4245-842a-3736879baf2e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5X_API_27_2]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1o0qI5DoWBSvct2NcNXTV0wHpU0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/lib/screens/jana_usinis" />
+      <recent name="$PROJECT_DIR$/lib/screens/kino" />
+      <recent name="$PROJECT_DIR$/lib/screens/sport" />
+      <recent name="$PROJECT_DIR$/lib/screens/marathon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/screens/kitapkhana" />
+      <recent name="$PROJECT_DIR$/lib/screens/gibratty_angimeler" />
+      <recent name="$PROJECT_DIR$/lib/screens/quiz" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27533d78-ee8d-4245-842a-3736879baf2e" name="Default Changelist" comment="" />
+      <created>1612433772482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612433772482</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="402" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612934513377">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="402" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1612934513377" />
+    <state x="402" y="259" key="#com.intellij.fileTypes.FileTypeChooser/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612855650182" />
+    <state x="324" y="381" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1613240094827">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="324" y="381" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1613240094827" />
+    <state x="324" y="381" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612767792316" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613240255221">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1613240255221" />
+    <state x="70" y="210" width="950" height="548" key="AVDManager" timestamp="1613238457322">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="70" y="210" width="950" height="548" key="AVDManager/0.0.1440.900@0.0.1440.900" timestamp="1613238457322" />
+    <state x="70" y="210" width="950" height="548" key="AVDManager/0.23.1440.811@0.23.1440.811" timestamp="1613197952835" />
+    <state x="2" y="95" width="1101" height="685" key="AVDManager/1440.-72.1920.1057/0.23.1440.807@0.23.1440.807" timestamp="1612767313871" />
+    <state x="100" y="100" width="1240" height="700" key="AVDManager/1440.-72.1920.1057/0.23.1440.811@0.23.1440.811" timestamp="1612510556541" />
+    <state x="2" y="95" width="1101" height="685" key="AVDManager/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612767493305" />
+    <state x="523" y="203" key="AndroidProcessChooserDialog" timestamp="1612775485027">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="523" y="203" key="AndroidProcessChooserDialog/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612775485027" />
+    <state width="1398" height="279" key="GridCell.Tab.0.bottom" timestamp="1613246477760">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="279" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613246477760" />
+    <state width="1398" height="279" key="GridCell.Tab.0.bottom/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612904431302" />
+    <state width="1398" height="279" key="GridCell.Tab.0.center" timestamp="1613246477759">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="279" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613246477759" />
+    <state width="1398" height="279" key="GridCell.Tab.0.center/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612904431300" />
+    <state width="1398" height="279" key="GridCell.Tab.0.left" timestamp="1613246477758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="279" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613246477758" />
+    <state width="1398" height="279" key="GridCell.Tab.0.left/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612904431299" />
+    <state width="1398" height="279" key="GridCell.Tab.0.right" timestamp="1613246477759">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="279" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613246477759" />
+    <state width="1398" height="279" key="GridCell.Tab.0.right/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612904431302" />
+    <state x="154" y="82" key="SettingsEditor" timestamp="1613300703608">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="154" y="82" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1613300703608" />
+    <state x="458" y="89" key="SettingsEditor/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612510187278" />
+    <state x="511" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612896237183">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="511" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1440.-95.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1612896237183" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/podcast/podcasts.dart</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

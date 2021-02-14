@@ -1,0 +1,4 @@
+#Sun Feb 14 01:49:37 ALMT 2021
+base.0=/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_database/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/layout/custom_dialog.xml"
+    }
+]

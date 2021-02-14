@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_core/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_core/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_core/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/firebase_core/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8014592fef965c457f4d96ed4583a915/core-1.1.0/res/drawable/notification_icon_background.xml"
+    }
+]

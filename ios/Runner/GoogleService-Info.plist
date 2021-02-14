@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>114097815121-q7jj38g8uknep1u98s3pkjnlb7ifjpmv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.114097815121-q7jj38g8uknep1u98s3pkjnlb7ifjpmv</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>114097815121-5igm6spm553bfp8v7fr3oall6teruohd.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXc5R6LpnFM2RTj4Z1c_XI9rFL_0IaiTk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>114097815121</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kz.dostyk.ozindidamyt</string>
+	<key>PROJECT_ID</key>
+	<string>ozindi-damyt</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ozindi-damyt.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:114097815121:ios:f5a4c79298db48e3298270</string>
+	<key>DATABASE_URL</key>
+	<string>https://ozindi-damyt.firebaseio.com</string>
+</dict>
+</plist>
