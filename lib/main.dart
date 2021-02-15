@@ -1,24 +1,30 @@
+
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'drawer/drawer.dart';
 import 'screens/kitapkhana/library.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    DevicePreview(
+      builder: (context) => MyApp(),
+      enabled: !kReleaseMode,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'OzindiDamyt',
-      theme: ThemeData(
-        primaryColor: Colors.white,
-        textTheme: TextTheme(headline6: TextStyle(color: Colors.black))
-      ),
-      home: LibraryPage()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'OzindiDamyt',
+        theme: ThemeData(
+            primaryColor: Colors.white,
+            textTheme: TextTheme(headline6: TextStyle(color: Colors.black))),
+        home: LibraryPage());
   }
 }
 

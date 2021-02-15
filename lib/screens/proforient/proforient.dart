@@ -49,8 +49,8 @@ class _ProfOrientState extends State<ProfOrient> {
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
               child: Container(
-                width: width / 55,
-                height: width / 3,
+                width: width ,
+                height: height / 7,
                 child: RaisedButton(
                     elevation: 10.0,
                     shape: RoundedRectangleBorder(
@@ -92,8 +92,8 @@ class _ProfOrientState extends State<ProfOrient> {
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
               child: Container(
-                width: width / 55,
-                height: width / 3,
+                width: width ,
+                height: height / 7,
                 child: RaisedButton(
                     elevation: 10.0,
                     shape: RoundedRectangleBorder(
@@ -109,7 +109,7 @@ class _ProfOrientState extends State<ProfOrient> {
                           child: Text('Nova Education',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: width / 15)),
+                                  fontSize: width / 16)),
                         ),
                         Image.network('https://instagram.fala3-1.fna.fbcdn.net/v/t51.2885-19/s320x320/117625513_1531529500360705_611970714836922198_n.jpg?_nc_ht=instagram.fala3-1.fna.fbcdn.net&_nc_ohc=78UrgSbPBUwAX-9DYjk&tp=1&oh=bb89e4d947a70121ce05a62d98b7b1c0&oe=6050A9AD'
                         ),
