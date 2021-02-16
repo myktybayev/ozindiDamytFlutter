@@ -111,19 +111,26 @@ class _FilterByLanguageKitaptarState extends State<FilterByLanguageKitaptar> {
                   if (!snapshot.hasData) {
                       return Center(child: CircularProgressIndicator());
                   } else {
-                      return GridView.extent(
-                        // crossAxisCount: 3,
-                        crossAxisSpacing: 4.0,
-                        mainAxisSpacing: 8.0,
-                          maxCrossAxisExtent: 150,
-                        children: List.generate(_bookList.length, (index) {
-                            return SizedBox(
-                                child: Center(
-                                  child: bookItem(context, _bookList[index]),
-                                )
-                            );
-                        }
-                        ));
+                      return Container(
+                        margin: EdgeInsets.only(top: 10),
+                        child: GridView.extent(
+                          // crossAxisCount: 3,
+                          crossAxisSpacing: 4.0,
+                          mainAxisSpacing: 10.0,
+                            maxCrossAxisExtent: 150,
+                          children: List.generate(_bookList.length, (index) {
+                              return Container(
+
+                                child: SizedBox(
+                                  child: Container(
+
+                                          child: bookItem(context, _bookList[index])),
+
+                                ),
+                              );
+                          }
+                          )),
+                      );
                   }
                   })
     ));
@@ -135,60 +142,68 @@ class _FilterByLanguageKitaptarState extends State<FilterByLanguageKitaptar> {
   }
 
   Widget bookItem(BuildContext context, Book book){
-      return Container(
-          margin: EdgeInsets.only(top: 10,left:10, right: 10),
-              child: GestureDetector(
-                  child: Column(
-                      children: <Widget>[
-                        Container(
-                          decoration: BoxDecoration(boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.3), //color of shadow
-                              spreadRadius: 2, //spread radius
-                              blurRadius: 12, // blur radius
-                            )
-                          ]),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(5),
-                            child: FadeInImage.assetNetwork(
-                              placeholder: 'images/book-cover.png',
-                              image: book.photo,
-                              width: 70,
-                              height: 90,
-                              fit: BoxFit.cover,
+    Size size=MediaQuery.of(context).size;
+    double height=MediaQuery.of(context).size.height;
+    double width=MediaQuery.of(context).size.width;
+    double text=MediaQuery.textScaleFactorOf(context);
+    print(width);
+    return Container(
+        child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Container(
+                  child: GestureDetector(
+                      child: Column(
+                          children: <Widget>[
+                            Container(
+                              decoration: BoxDecoration(boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.3), //color of shadow
+                                  spreadRadius: 2, //spread radius
+                                  blurRadius: 12, // blur radius
+                                )
+                              ]),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(5),
+                                child: FadeInImage.assetNetwork(
+                                  placeholder: 'images/book-cover.png',
+                                  image: book.photo,
+                                  width: width/5.5,
+                                  height: width/3.9,
+                                  fit: BoxFit.fill,
+                                ),
+                                  // child: FadeInImage.assetNetwork(
+                                  //     placeholder: 'images/book-cover.png',
+                                  //     width: 70,
+                                  //     height: 90,
+                                  //     fit: BoxFit.cover,
+                                  //   book.photo,
+                                  // )
+                              ),
                             ),
-                              // child: FadeInImage.assetNetwork(
-                              //     placeholder: 'images/book-cover.png',
-                              //     width: 70,
-                              //     height: 90,
-                              //     fit: BoxFit.cover,
-                              //   book.photo,
-                              // )
-                          ),
-                        ),
-                        Text(
-                          book.name,
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
+                            Text(
+                              book.name,
+                              maxLines: 1,
+                              textAlign: TextAlign.center,
 
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                        ),
-
-                        Text(
-                          book.author,
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 14),
-                        ),
-                      ]
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: width/32),
+                            ),
+                            Text(
+                              book.author,
+                              maxLines: 1,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: width/32),
+                            ),
+                          ]
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Kitap_about(book: book)),
+                        );
+                      }
                   ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Kitap_about(book: book)),
-                    );
-                  }
+                ),
               )
       );
   }
