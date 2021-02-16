@@ -80,8 +80,8 @@ class _QuizPageState extends State<QuizPage> {
       child: Padding(
         padding: EdgeInsets.only(right: 10, left: 10, top: 10),
         child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height / 5.5,
+          // width: MediaQuery.of(context).size.width / 20,
+          height: MediaQuery.of(context).size.height / 6,
           child: Center(
             child: Card(
               elevation: 15,
@@ -89,33 +89,44 @@ class _QuizPageState extends State<QuizPage> {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Container(
-                height: MediaQuery.of(context).size.height,
+                // height: MediaQuery.of(context).size.height / 5,
                 width: MediaQuery.of(context).size.width,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 1, bottom: 1),
-                  child: Row(
-                    children: [
-                      Container(
+                child: Row(
+                  children: [
+                    Flexible(
+                      child: Container(
                         width: MediaQuery.of(context).size.width / 3,
                         height: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
                             image: DecorationImage(
                               image: NetworkImage(quizDb.photo),
-                              fit: BoxFit.fill,
+                              fit: BoxFit.fitHeight,
                             )),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                          // left: MediaQuery.of(context).size.width / 50,
+                          top: MediaQuery.of(context).size.height / 50,
+                          bottom: MediaQuery.of(context).size.height / 50,
+                          right: MediaQuery.of(context).size.height / 70),
+                      child: Container(
+                        margin: EdgeInsets.only(left: MediaQuery.of(context).size.width / 15),
                         child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          // crossAxisAlignment: CrossAxisAlignment.,
                           children: [
                             Container(
-                              child: Text(
-                                quizDb.title,
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              child: Flexible(
+                                flex: 2,
+                                child: Text(
+                                  quizDb.title,
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ),
                             Spacer(),
@@ -142,8 +153,8 @@ class _QuizPageState extends State<QuizPage> {
                           ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

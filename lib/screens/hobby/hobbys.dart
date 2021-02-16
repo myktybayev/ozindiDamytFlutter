@@ -86,74 +86,71 @@ class _HobbysPageState extends State<HobbysPage> {
   }
 
   Widget hobbyItem(BuildContext context, HobbyDb hobbyDb) {
-    return Container(
-      height: MediaQuery.of(context).size.height / 4.5,
-      child: Column(
-        children: [
-          GestureDetector(
-            onTap: () async {
-              final url = hobbyDb.link;
-              if (await canLaunch(url)) {
-                await launch(url);
-              } else {
-                throw 'Could not launch $url';
-              }
-            },
-            child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 130,
-                child: Center(
-                  child: Card(
-                    elevation: 15,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
+    return Column(
+      children: [
+        GestureDetector(
+          onTap: () async {
+            final url = hobbyDb.link;
+            if (await canLaunch(url)) {
+              await launch(url);
+            } else {
+              throw 'Could not launch $url';
+            }
+          },
+          child: Padding(
+            padding: EdgeInsets.all(10),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: 130,
+              child: Center(
+                child: Card(
+                  elevation: 15,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Container(
+                    margin: EdgeInsets.all(6),
                     child: Container(
-                      margin: EdgeInsets.all(6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            colorFilter: ColorFilter.mode(
-                                Colors.black.withOpacity(0.2),
-                                BlendMode.srcOver),
-                            image: NetworkImage(hobbyDb.photo),
-                          ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
                         ),
-                        child: Container(
-                            height: MediaQuery.of(context).size.height,
-                            width: MediaQuery.of(context).size.width,
-                            child: Padding(
-                              padding: EdgeInsets.only(top: 6, left: 15),
-                              child: Container(
-                                margin: EdgeInsets.only(top: 20),
-                                child: Text(
-                                  hobbyDb.title,
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    backgroundColor:
-                                        Colors.white.withOpacity(0.1),
-                                    fontFamily: 'Comfortaa',
-                                    color: Colors.white,
-                                  ),
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(
+                              Colors.black.withOpacity(0.2), BlendMode.srcOver),
+                          image: NetworkImage(hobbyDb.photo),
+                        ),
+                      ),
+                      child: Container(
+                          height: MediaQuery.of(context).size.height,
+                          width: MediaQuery.of(context).size.width,
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 6, left: 15),
+                            child: Container(
+                              margin: EdgeInsets.only(top: 20),
+                              child: Text(
+                                hobbyDb.title,
+                                maxLines: 2,
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  backgroundColor:
+                                      Colors.white.withOpacity(0.1),
+                                  fontFamily: 'Comfortaa',
+                                  color: Colors.white,
                                 ),
                               ),
-                            )),
-                      ),
+                            ),
+                          )),
                     ),
                   ),
                 ),
               ),
             ),
-          )
-        ],
-      ),
+          ),
+        )
+      ],
     );
   }
 }
