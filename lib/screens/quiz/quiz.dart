@@ -105,13 +105,7 @@ class _QuizPageState extends State<QuizPage> {
                             )),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                          // left: MediaQuery.of(context).size.width / 50,
-                          top: MediaQuery.of(context).size.height / 50,
-                          bottom: MediaQuery.of(context).size.height / 50,
-                          right: MediaQuery.of(context).size.height / 70),
-                      child: Container(
+                    Container(
                         margin: EdgeInsets.only(left: MediaQuery.of(context).size.width / 15),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -153,14 +147,13 @@ class _QuizPageState extends State<QuizPage> {
                           ],
                         ),
                       ),
-                    ),
                   ],
-                ),
               ),
             ),
           ),
         ),
       ),
+    )
     );
   }
 }

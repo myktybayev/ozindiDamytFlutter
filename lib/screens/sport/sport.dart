@@ -77,6 +77,8 @@ class _SportPageState extends State<SportPage> {
 
   Widget sportItem(BuildContext context, SportDb sportDb) {
     return Container(
+      // height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
       child: Column(
         children: [
           GestureDetector(
@@ -91,8 +93,8 @@ class _SportPageState extends State<SportPage> {
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height / 6,
+                // width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 4,
                 child: Center(
                   child: Card(
                     elevation: 15,

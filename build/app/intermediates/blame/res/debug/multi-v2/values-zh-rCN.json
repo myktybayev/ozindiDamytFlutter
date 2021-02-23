@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/Fluttter workspace/OzindiDamyt/ozindi_damyt/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "/Users/mac/Desktop/OzindiDamyt Flutter/ozindi_damyt/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/e2d300f4a60845878ad377b5cd04ce7e/play-services-base-17.0.0/res/values-zh-rCN/values.xml",
+                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/80b491bac08fbaada994ed9c25b82b79/jetified-play-services-basement-17.1.0/res/values-zh-rCN/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "157",
+                        "endOffsets": "408"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1125",
+                        "endColumns": "157",
+                        "endOffsets": "1278"
+                    }
+                },
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/d6aba5323bb555cf86c29c256a4a2f97/play-services-base-17.1.0/res/values-zh-rCN/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,23 +52,6 @@
                         "startOffsets": "2408",
                         "endColumns": "100",
                         "endOffsets": "2504"
-                    }
-                },
-                {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/3225c852af31cd63919f27870e43f036/jetified-play-services-basement-17.0.0/res/values-zh-rCN/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "157",
-                        "endOffsets": "408"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1125",
-                        "endColumns": "157",
-                        "endOffsets": "1278"
                     }
                 }
             ]

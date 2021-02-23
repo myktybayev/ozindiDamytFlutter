@@ -94,7 +94,7 @@ class _MarathonPageState extends State<MarathonPage> {
             padding: EdgeInsets.all(10),
             child: Container(
               width: MediaQuery.of(context).size.width * 100,
-              height: MediaQuery.of(context).size.height / 6,
+              height: MediaQuery.of(context).size.height / 4,
               child: Center(
                 child: Card(
                   elevation: 15,

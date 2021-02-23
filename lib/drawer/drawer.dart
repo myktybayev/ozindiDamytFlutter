@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ozindi_damyt/screens/gibratty_angimeler/gibratty_angime_main.dart';
+import 'package:ozindi_damyt/authentication/authentication_provider.dart';
+import 'package:ozindi_damyt/screens/gibratty_angimeler/gibratty_angime_main3.dart';
 import 'package:ozindi_damyt/screens/hobby/hobbys.dart';
 import 'package:ozindi_damyt/screens/jana_usinis/jana_usinis.dart';
-import 'package:ozindi_damyt/screens/kino/cinema.dart';
 import 'package:ozindi_damyt/screens/kino/cinema_page.dart';
 import 'package:ozindi_damyt/screens/marathon/marathon.dart';
 import 'package:ozindi_damyt/screens/podcast/podcasts.dart';
@@ -11,6 +11,7 @@ import 'package:ozindi_damyt/screens/quiz/quiz.dart';
 import 'package:ozindi_damyt/screens/sport/sport.dart';
 import 'package:ozindi_damyt/screens/user_cabinet/user-cabinet.dart';
 import '../screens/kitapkhana/library.dart';
+import 'package:provider/provider.dart';
 
 
 class DrawerMenu extends StatefulWidget {
@@ -80,8 +81,20 @@ class _DrawerMenuState extends State<DrawerMenu> {
             CreateElements('Спорт', MaterialPageRoute(builder: (BuildContext context) => SportPage()), 'ic_sport_white.png'),
             CreateElements('Кино', MaterialPageRoute(builder: (BuildContext context) => CinemaPage()), 'kino.png'),
             CreateElements('Жаңа ұсыныстар', MaterialPageRoute(builder: (BuildContext context) => JanaUsinis()), 'feedback.png'),
+            ListTile(
+              leading: Icon(
+                Icons.exit_to_app,
+                color: Colors.black,
+              ),
+              title: Text(
+                'Шығу',
+                style: TextStyle(color: Colors.black),
+              ),
+              onTap: () {
+                context.read<AuthenticationProvider>().signOut();
+              },
+            ),
             // CreateElements('Жарыс Жеңімпаздары', MaterialPageRoute(builder: (BuildContext context) => LibraryPage()), 'jenimpazar.png'),
-
 
           ],
         ),

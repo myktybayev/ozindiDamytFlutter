@@ -168,7 +168,7 @@ class _FilterByLanguageKitaptarState extends State<FilterByLanguageKitaptar> {
                                   placeholder: 'images/book-cover.png',
                                   image: book.photo,
                                   width: width/5.5,
-                                  height: width/3.9,
+                                  height: width/4,
                                   fit: BoxFit.fill,
                                 ),
                                   // child: FadeInImage.assetNetwork(

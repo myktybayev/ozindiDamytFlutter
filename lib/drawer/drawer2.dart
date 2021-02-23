@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ozindi_damyt/screens/gibratty_angimeler/gibratty_angime_main.dart';
+import 'package:ozindi_damyt/authentication/authentication_provider.dart';
+import 'package:ozindi_damyt/screens/gibratty_angimeler/gibratty_angime_main3.dart';
 import 'package:ozindi_damyt/screens/kino/cinema.dart';
 import 'package:ozindi_damyt/screens/kino/cinema_page.dart';
 import 'package:ozindi_damyt/screens/podcast/podcasts.dart';
 import 'package:ozindi_damyt/screens/user_cabinet/user-cabinet.dart';
 import '../screens/kitapkhana/library.dart';
+import 'package:provider/provider.dart';
 
 class DrawerMenu2 extends StatefulWidget {
   @override
@@ -208,6 +210,19 @@ class _DrawerMenu2State extends State<DrawerMenu2> {
                     MaterialPageRoute(builder: (BuildContext context) {
                   // return Mas();
                 }));
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.exit_to_app,
+                color: Colors.black,
+              ),
+              title: Text(
+                'Шығу',
+                style: TextStyle(color: Colors.black),
+              ),
+              onTap: () {
+                context.read<AuthenticationProvider>().signOut();
               },
             ),
           ],

@@ -8,6 +8,7 @@ import 'package:ozindi_damyt/screens/podcast/podcastdb.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/widgets.dart';
 
+
 class PodcastPage extends StatefulWidget {
   final String dbName;
 
@@ -59,6 +60,8 @@ class _PodcastPageState extends State<PodcastPage> {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       drawer: DrawerMenu(),
@@ -84,22 +87,22 @@ class _PodcastPageState extends State<PodcastPage> {
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: 15, bottom: 10, left: 20, right: 20),
-            child:
-            PodcastCard(),
+            padding:
+                const EdgeInsets.only(top: 15, bottom: 10, left: 20, right: 20),
+            child: PodcastCard(),
           ),
           Expanded(
             child: Container(
               child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 140,
-                      childAspectRatio: MediaQuery.of(context).size.height / 1200,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 3),
-                  // shrinkWrap: true,
+                  maxCrossAxisExtent: 200,
+                  childAspectRatio: 3.5 / 4,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10),
+                  shrinkWrap: true,
                   // scrollDirection: Axis.vertical,
                   itemCount: _podcastListNew.length,
-                  padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+                  padding: EdgeInsets.only(left: 10, right: 10, top: 10),
                   itemBuilder: (context, i) {
                     return podcastItem(context, _podcastListNew[i]);
                   }),
@@ -110,59 +113,65 @@ class _PodcastPageState extends State<PodcastPage> {
     );
   }
 
-  Widget podcastItem(BuildContext context, PodcastDb podcastDb) {
-    return GestureDetector(
-      child: Column(
-        children: [
-          Container(
-            decoration: BoxDecoration(boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.3),
-                spreadRadius: 2,
-                blurRadius: 12,
-              ),
-            ]),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                podcastDb.photo,
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height / 8,
-                fit: BoxFit.fitWidth,
+  Widget podcastItem(BuildContext context, PodcastDb podcastDb) { Size size=MediaQuery.of(context).size;
+  double height=MediaQuery.of(context).size.height;
+  double width=MediaQuery.of(context).size.width;
+  double text=MediaQuery.textScaleFactorOf(context);
+  print(width);
+    return Container(
+      width: 100,
+      height: height*0.3,
+      child: GestureDetector(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  spreadRadius: 2,
+                  blurRadius: 12,
+                ),
+              ]),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.network(
+                  podcastDb.photo,
+                  width: width/3,
+                  height: width/3,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
-          ),
-          Expanded(
-            flex: 0,
-            child: Padding(
-              padding: EdgeInsets.only(top: 8, bottom: 02),
+            Expanded(flex: 0,
+              child: Padding(
+                padding: EdgeInsets.only(top: 8, bottom: 2),
+                child: Text(
+                  podcastDb.topic,
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                ),
+              ),
+            ),
+            Expanded(flex: 1,
               child: Text(
-                podcastDb.topic,
-                maxLines: 2,
+                podcastDb.title,
+                maxLines: 1,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                style: TextStyle(fontSize: 11,color: Colors.blue),
               ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Text(
-              podcastDb.title,
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 11, color: Colors.blue),
-            ),
-          ),
-        ],
+          ],
+        ),
+        onTap: () async {
+          final url = podcastDb.link;
+          if (await canLaunch(url)) {
+            await launch(url);
+          } else {
+            throw 'Could not launch $url';
+          }
+        },
       ),
-      onTap: () async {
-        final url = podcastDb.link;
-        if (await canLaunch(url)) {
-          await launch(url);
-        } else {
-          throw 'Could not launch $url';
-        }
-      },
     );
   }
 }

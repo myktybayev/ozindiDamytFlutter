@@ -8,7 +8,7 @@ import 'package:ozindi_damyt/drawer/drawer.dart';
 import 'package:ozindi_damyt/screens/kitapkhana/qazaqsha-kitaptar.dart';
 
 import 'bir-kitap-about.dart';
-import 'book-of-month-widget.dart';
+import 'book-of-month-widget2.dart';
 
 class LibraryPage extends StatefulWidget {
 
@@ -228,24 +228,32 @@ class _LibraryPageState extends State<LibraryPage> {
   }
 
   createAlertDialog(BuildContext context) {
+
+    Size size=MediaQuery.of(context).size;
+    double height=MediaQuery.of(context).size.height;
+    double width=MediaQuery.of(context).size.width;
+    double text=MediaQuery.textScaleFactorOf(context);
+    print(width);
+
+
     return showDialog(context: context, builder: (context) {
       return AlertDialog(
         backgroundColor: Colors.white,
         title: Container(
-          width: 40,
-          height: 60,
+          width: width/5,
+          height: width/5,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 10, right: 15),
-                child: RaisedButton(
+
+                RaisedButton(
                   color: Colors.red,
                   hoverColor: Colors.red,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: SizedBox(
-                    height: 50,
+                    height: width/7,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 10),
                       child: Column(
@@ -265,16 +273,16 @@ class _LibraryPageState extends State<LibraryPage> {
                         context) => FilterByLanguageKitaptar(kitapLanguage: "kz")));
                   },
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 5),
-                child: RaisedButton(
+
+
+
+               RaisedButton(
                   color: Colors.red,
                   hoverColor: Colors.red,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: SizedBox(
-                    height: 50,
+                    height: width/7,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 10),
                       child: Column(
@@ -282,7 +290,7 @@ class _LibraryPageState extends State<LibraryPage> {
                           const Text('Орысша ', style: TextStyle(fontSize: 13,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),),
-                          const Text('кітаптар', style: TextStyle(fontSize: 13,
+                          const Text('кітаптар', style: TextStyle(fontSize: 12,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),),
                         ],
@@ -295,7 +303,7 @@ class _LibraryPageState extends State<LibraryPage> {
                         context) => FilterByLanguageKitaptar(kitapLanguage: "rus",)));
                   },
                 ),
-              ),
+
             ],
           ),
         ),
